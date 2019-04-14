@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="prvastrana.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="logo.png" id="a"></a>        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+        <div class="collapse navbar-collapse" id="collapseid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#vrh">O meni</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projekti</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="trecastrana.html">Projekti</a>
+                            <a class="dropdown-item" href="page1.html">Galerija slika</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="drugastrana.html">Kontakt</a>
+                </li>
+            </ul>
+                
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:100px">
+    <header id="vrh">Kratka biografija</header>
+    <p><img src="slika1.jpg" id="slika">
+        Zovem se Aleksandra Stamenković. Rođena sam 30. jula 1991. godine u Gnjilnu. 
+        Diplommirala sam 2017. godine na Matematičkom fakultetu u Beogradu, smer statistika, aktuarska
+        i finansijska matematika. Trenutno sam na master studijama na smeru profesor matematike
+        i računarstva na istom fakultetu.
+        Radim u Trgovačkoj školi u Beogradu, gde predajem matematiku i računarstvo i informatiku. Najveća prednost
+        rada u prosveti jeste višak slobodnog vremena. Zato sam i krenula na kurs veb dizajna. Nadam se da 
+        ću naučiti dosta novih i korisnih stvari. Bio mi je potreban izazov i mislim da sam odabrala pravu stvar.
+        <br>
+        U nastavku je dat moj raspored časova za radnu nedelju.    
+    </p>
+    <br>
+    <div id="omotac">
+    <div class="table table-responsive-sm">
+        <table class="table table-info table-bordered table-hover text-center">
+        <h1>Raspored časova</h1>
+        <thead class="thead-dark">
+            <tr><th>Ponedeljak</th><th>Utorak</th><th>Sreda</th><th>Četvrtak</th><th>Petak</th></tr>
+        </thead>
+        <tbody>
+            <tr><td></td><td></td><td>II/8</td><td>II/6</td><td></td></tr>
+            <tr><td>III/1</td><td></td><td>III/1</td><td>II/7</td><td></tr>
+            <tr><td>II/11</td><td></td><td>II/9</td><td>Otvorena vrata</td><td></td></tr>
+            <tr><td>II/9</td><td>I/10-grupa A</td><td>II/6</td><td>II/10</td><td>I/11-grupa B</td></tr>
+            <tr><td>II/11</td><td>I/10-grupa A</td><td>II/10</td><td></td><td>I/11-grupa B</td></tr>
+            <tr><td>II/8</td><td>I/10-grupa B</td><td>II/7</td><td></td><td></td></tr>
+            <tr><td></td><td>I/10-grupa B</td><td></td><td></td><td></td></tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+</br></br>
+
+    <div id="legend">
+    <ul class="list-group">
+        <h2>Legenda</h2>
+        <li class="list-group-item list-group-item-primary">Trgovci</li>
+        <ol class="list-group text-right">
+                <li class="list-group-item list-group-item-warning">I/10</li>
+                <li class="list-group-item list-group-item-warning">I/11</li>
+                <li class="list-group-item list-group-item-warning">II/8</li>
+                <li class="list-group-item list-group-item-warning">II/9</li>
+                <li class="list-group-item list-group-item-warning">II/10</li>
+                <li class="list-group-item list-group-item-warning">II/11</li>
+        </ol>
+        <li class="list-group-item list-group-item-primary">Komercijalisti</li>
+        <ol class="list-group text-right">
+                <li class="list-group-item list-group-item-danger">II/6</li>
+                <li class="list-group-item list-group-item-danger">II/7</li>
+        </ol>
+        <li class="list-group-item list-group-item-primary">Aranžeri u trgovini</li>
+        <ol class="list-group text-right">
+                <li class="list-group-item list-group-item-success">III/1</li>
+        </ol>
+    </ul>
+    </div>
+</div>
+</body>
+</html>
