@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="drugastrana.css">
+    <title>Druga strana</title>
+    
+</head>
+<body class="bg-info">
+        <nav class="navbar bg-dark navbar-expand-md navbar-dark fixed-top">
+                <a class="navbar-brand" href="#"><img src="logo.png" id="a"></a>        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="collapse navbar-collapse" id="collapseid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">O meni</a>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projekti</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="trecastrana.html">Projekti</a>
+                                    <a class="dropdown-item" href="page1.html">Galerija slika</a>
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#vrh">Kontakt</a>
+                        </li>
+                    </ul>
+                        
+                </div>
+            </nav>
+    <div class="container-fluid" style="margin-top:100px">
+    <header id="vrh">Časovi matematike</header>
+    <p>Ukoliko imate problema sa matematikom možete me kontaktirati i zakazati čas.
+        Pre toga popunite upitnik i prosledite isti. 
+    </p>
+
+    <div class="container">
+        <form>
+            <fieldset>    	
+            <legend>Osnovni podaci</legend>
+            <div class="form-group row">
+                <label for="ime" class="col-sm-2 col-form-label">Ime*:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="ime" placeholder="Unesite vase ime">
+                </div>
+                <label for="prezime" class="col-sm-2 col-form-label">Prezime*:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="prezime" placeholder="Unesite vase prezime">
+                </div>    
+            </div>
+            </fieldset>
+            <br>
+            <fieldset>    	
+            <legend>Kontakt</legend>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email*:</label>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control" id="email" placeholder="Unesite vasu email adresu">
+                </div>
+                <label for="tel" class="col-sm-2 col-form-label">Tel:</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="tel" placeholder="Unesite vas broj telefona">
+                </div>
+            </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Gradivo</legend>
+                <div class="form-group">
+                        <label for="razred">Koji razred pohađate</label>
+                        <select multiple class="form-control" id="razred">
+                            <option>Osnovna škola - 1. do 4. razred</option>
+                            <option>Osnovna škola - 5. do 8. razred</option>
+                            <option>Srednja škola</option>
+                            <option>Viša škola</option>
+                            <option>Fakultet</option>
+                        </select>
+                    </div>
+            </fieldset>
+            <br>
+            <fieldset> 
+                <legend>Termin časa</legend>
+                <div class="form-group-row">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="termin" id="ponedeljak" value="option1">
+                        <label class="form-check-label" for="ponedeljak">
+                            Ponedeljak
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="termin" id="utorak" value="option2">
+                        <label class="form-check-label" for="utorak">
+                            Utorak
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="termin" id="sreda" value="option3">
+                        <label class="form-check-label" for="sreda">
+                             Sreda
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="termin" id="cetvrtak" value="option4">
+                         <label class="form-check-label" for="cetvrtak">
+                             Četvrtak
+                         </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="termin" id="petak" value="option5">
+                        <label class="form-check-label" for="petak">
+                            Petak
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="termin" id="subota" value="option6">
+                        <label class="form-check-label" for="subota">
+                            Subota
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="termin" id="nedelja" value="option7">
+                            <label class="form-check-label" for="nedelja">
+                               Nedelja
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset> 
+                <legend>Kako ste saznali za mene</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="opcija1" value="option1">
+                    <label class="form-check-label" for="opcija">Preko veb sajta</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="opcija2" value="option2">
+                    <label class="form-check-label" for="opcija2">Preko preporuke</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="opcija3" value="option3">
+                    <label class="form-check-label" for="opcija3">Neki drugi način</label>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset> 
+                <legend>Poruka</legend>
+                <div class="form-group">
+                    <textarea class="form-control" id="Poruka" rows="3" placeholder="Ovde mozete uneti vasu poruku..."></textarea>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset> 
+                    <legend>Zadatak</legend>
+                    <div class="form-group">
+                        <label for="zadatak">Mozete proslediti i konkretan zadatak</label>
+                        <input type="file" class="form-control-file" id="zadatak">
+                    </div>
+            </fieldset>
+            <br>
+            <fieldset> 
+                    <legend>Prosledi podatke</legend>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Zakaži čas</button>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+</div>   
+</body>
+</html>
